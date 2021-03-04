@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Efek Animasi</title>
+    <style>
+        div
+        {
+            background-color: rgb(214, 118, 233);
+            height: 100px;
+            width: 100px;
+            position: relative;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+     
+    <h2>Efek Animate</h2>
+ 
+    <button class="jalan">Jalan</button>
+ 
+    <div></div>
+ 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() 
+        {
+            $(".jalan").click(function (e) 
+            { 
+               $("div").animate(
+                {
+                    left:"500",
+                    opacity: "0.5",
+                    height: "150",
+                    width: "150"
+                });
+            });
+        });
+    </script>
+ 
+</body>
+</html>
